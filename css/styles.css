@@ -594,12 +594,17 @@ ul {
   justify-content: center;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   fill: #000000;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
+
+/* .button-close {
+} */
 
 .is-hidden {
   opacity: 0;
