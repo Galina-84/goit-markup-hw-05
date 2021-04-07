@@ -277,15 +277,16 @@ ul {
 
 .box {
   position: relative;
-  width: 370px;
-  height: 255px;
   overflow: hidden;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box:hover .overlay {
+/* .box:hover .overlay {
   transform: translateY(-100%);
+} */
+
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
+  transform: translateY(0%);
 }
 
 .overlay {
@@ -293,24 +294,23 @@ ul {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 370px;
-  height: 255px;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: rgba(33, 150, 243, 0.9);
-}
-
-.overlay-text {
   margin-left: 24px;
   margin-right: 24px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1, 55;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(33, 150, 243, 0.9);
 }
 
 /* footer */
